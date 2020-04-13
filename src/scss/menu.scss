@@ -1,0 +1,268 @@
+@import "colors";
+
+@media (min-width: 0px) {
+
+  .navbar--active {
+    display: flex !important;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    box-shadow: 15px 0 8px -3px rgba(50, 50, 50, 0.2);
+    width: 100%;
+    height: 876px;
+    background: rgba(255, 255, 255, 0.7);
+    overflow: scroll;
+  }
+
+  .Animation__open {
+    position: fixed;
+    height: 100%;
+    overflow: scroll;
+    animation-name: modalNavOpen;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    box-shadow: 1px 0 15px rgb(151, 145, 145);
+  }
+
+  .AnimationNavClose {
+    animation-name: modalNavClose;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+  }
+
+  @keyframes modalNavClose {
+    0% {
+      left: 0;
+    }
+
+    100% {
+      left: -320px;
+    }
+  }
+
+  @keyframes modalNavOpen {
+    0% {
+      left: -320px;
+    }
+
+    100% {
+      left: 0;
+    }
+  }
+
+  .navbar {
+    display: none;
+    //background: var(--greyLight);
+  }
+
+  .navbar__content {
+    width: 100vw;
+    max-width: 320px;
+    background: var(--white);
+  }
+
+  .navbar__content-header {
+    display: flex;
+    padding: 23px 0 0 24px;
+    margin-bottom: 51px;
+  }
+
+  .navbar__content-header-search:hover, .navbar__content-header-close:hover, .link__settings:hover, .link__search:hover, .navbar__content-icons-profile:hover, .navbar__content-icons-message:hover, .navbar__content-icons-call:hover {
+    background-color: var(--pinkHover);
+  }
+
+  .navbar__content-header-close, .navbar__content-header-search, .navbar__content-icons-call, .navbar__content-icons-message, .navbar__content-icons-profile {
+    position: relative;
+    background-color: var(--pink);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0;
+    transition: background-color .2s linear;
+  }
+
+  .navbar__content-icons:first-child {
+    margin: 0;
+  }
+
+  .navbar__content-header-close {
+    margin-right: 20px;
+  }
+
+  .navbar__content-header-close-icon, .navbar__content-header-search-icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
+  .navbar__content-header-close-icon {
+    height: 16px;
+    width: 16px;
+  }
+
+  .navbar__content-header-logo-icon {
+    height: 51px;
+    width: 97px;
+    fill: var(--greyDark);
+    margin-right: 75px;
+  }
+
+  .navbar__content-header-search-icon {
+    height: 17px;
+    width: 17px;
+  }
+
+  .navbar__content-menu {
+    padding-left: 24px;
+  }
+
+  .navbar__content-menu-items {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: var(--darkText);
+    font-weight: 600;
+    margin-bottom: 32px;
+  }
+
+  .navbar__content-menu-item {
+    padding-bottom: 32px;
+    cursor: pointer;
+    transition: color .2s linear;
+
+    &:hover {
+      color: var(--GreyHover);
+    }
+  }
+
+  .navbar__content-menu-item--active {
+    position: relative;
+    color: var(--lightText);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -24px;
+      top: 0;
+      border-left: 4px solid var(--green);
+      height: 32px;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+  }
+
+  .navbar__content-icons {
+    display: flex;
+    padding-left: 24px;
+    margin-bottom: 16px;
+  }
+
+  .navbar__content-icons-call, .navbar__content-icons-message, .navbar__content-icons-profile {
+    margin-left: 16px;
+  }
+
+  .navbar__content-icons-call {
+    margin: 0;
+  }
+
+  .navbar__content-icons-call-item, .navbar__content-icons-message-item, .navbar__content-icons-profile-item {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
+  .navbar__content-contacts {
+    padding-left: 24px;
+  }
+
+  .navbar__content-contacts-email {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: var(--darkText);
+    font-weight: 500;
+    margin-bottom: 32px;
+  }
+
+  .navbar__content-contacts-number {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  .navbar__content-language {
+    display: flex;
+    padding-left: 24px;
+    font-weight: 600;
+    padding-bottom: 80px;
+  }
+
+  .navbar__content-language-ru, .navbar__content-language-en, .navbar__content-language-ch {
+    color: var(--darkText);
+    padding-right: 7px;
+    transition: color .2s linear;
+  }
+
+  .navbar__content-language a:hover {
+    color: var(--GreyHover);
+  }
+
+  .navbar__content-language-ru--active {
+    color: var(--lightText);
+  }
+}
+
+@media (min-width: 768px) {
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar--active {
+    height: 100vh;
+  }
+
+  .navbar__content-menu-items {
+    margin-bottom: 267px;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .navbar {
+    display: flex;
+    width: 306px;
+  }
+
+  .nav_close {
+    display: none;
+  }
+
+  .navbar__content-header {
+    justify-content: space-around;
+  }
+
+  .navbar__content-menu-items {
+    margin-bottom: 267px;
+  }
+}
+
+@media (min-width: 1600px) {
+
+  .navbar {
+    width: 320px;
+  }
+
+  .navAnimation {
+    height: 100vh;
+    overflow: auto;
+    bottom: 0;
+  }
+}

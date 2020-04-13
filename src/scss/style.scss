@@ -1,0 +1,81 @@
+@import "colors";
+@import "menu";
+@import "fonts";
+@import "content";
+@import "modal-call";
+@import "modal-feedback";
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, body {
+  margin: 0;
+  font-family: 'TT Lakes';
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+a {
+  color: var(--darkText);
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__active {
+  display: flex;
+}
+
+@media (min-width: 0px) {
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 88px;
+    width: 100%;
+  }
+
+  footer {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: var(--lightText);
+    mix-blend-mode: normal;
+    opacity: 0.72;
+  }
+}
+
+@media (min-width: 768px) {
+
+
+
+  footer {
+    display: flex;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  main {
+    display: flex;
+  }
+
+  header {
+    display: none;
+  }
+}
+
