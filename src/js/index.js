@@ -1,4 +1,5 @@
 import '../scss/style.scss';
+import "../../node_modules/swiper/dist/js/swiper.min.js";
 
 // slide logo
 const btnText = document.getElementById("swiper-showmore");
