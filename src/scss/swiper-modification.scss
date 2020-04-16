@@ -1,0 +1,398 @@
+/* -------- Swiper -------- */
+
+.header-logo {
+  padding: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  color: var(--lightText);
+  font-weight: 400;
+  border-top: 1px solid var(--borderColorGreen);
+  background: linear-gradient(270deg, var(--white) 0%, var(--Grey) 98.61%);
+}
+
+.logos {
+  height: 140px;
+  width: auto !important;
+}
+
+.swiper-pagination-bullet {
+  background: var(--paginationBulletActive);
+  width: 12px;
+  height: 12px;
+}
+
+.btn-modif {
+  position: absolute;
+  left: 10px;
+  bottom: 8px;
+}
+
+.item-logos, .item-technics, .item-prices {
+  background: var(--white);
+}
+
+.item-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 72px;
+  width: 240px;
+  margin: 16px 8px 16px 8px;
+  border: 1px solid var(--greyDivider);
+  border-radius: 6px;
+  transition: .2s background linear;
+  cursor: pointer;
+
+  &:first-child {
+    margin-left: 16px;
+  }
+
+  &:hover {
+    background: var(--whiteHover);
+  }
+}
+
+.item-special {
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.more {
+  display: none;
+}
+
+/*Swiper-technics*/
+
+.container-logo, .container-technics, .container-prices {
+  position: relative;
+  display: block;
+}
+
+.technics {
+  width: auto;
+  height: 228px;
+}
+
+.item-technics {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  height: 160px;
+  width: 240px;
+  margin: 16px 8px 16px 8px;
+  border: 1px solid var(--greyDivider);
+  border-radius: 6px;
+  transition: .2s background linear;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--whiteHover);
+  }
+
+  &:first-child, &:last-child {
+    margin-left: 16px;
+  }
+}
+
+.technics__header {
+  padding-left: 16px;
+  padding-top: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  font-weight: 500;
+  color: var(--darkText);
+}
+
+.button-technics {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+
+/*Swiper prices*/
+
+.prices_header {
+  display: none;
+}
+
+.wrapper-prices {
+  padding-bottom: 16px;
+}
+
+.prices {
+  margin-top: 16px;
+  height: 260px;
+  width: auto;
+}
+
+.item-prices {
+  position: relative;
+  height: 200px;
+  width: 260px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid var(--greyDivider);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .2s background linear;
+  padding: 16px 0 0 16px;
+  margin: 0 8px;
+
+  &:first-child {
+    margin-left: 16px;
+  }
+
+  &:last-child {
+    margin-right: 16px;
+  }
+
+  &:hover {
+    background: var(--whiteHover);
+  }
+}
+
+.prices-head {
+  line-height: 16px;
+  color: var(--lightText);
+  mix-blend-mode: normal;
+  opacity: 0.72;
+
+  &:first-of-type {
+    padding-bottom: 4px;
+  }
+
+  &:nth-of-type(2), &:nth-of-type(3) {
+    padding: 16px 0 4px;
+  }
+}
+
+.prices-text, .prices-term, .prices-time {
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: var(--darkText);
+}
+
+.prices-button {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: var(--pink);
+  border-radius: 16px;
+  width: 120px;
+  height: 32px;
+  transition: background .2s ease-in;
+
+  &:hover {
+    background: var(--pinkHover);
+  }
+}
+
+.prices-button-text {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  color: var(--white);
+  vertical-align: top;
+}
+
+.prices-button-img {
+  background-color: inherit;
+  padding-left: 7px;
+  padding-top: 6px;
+}
+
+@media (min-width: 768px) {
+
+  .wrapper-modif {
+    flex-wrap: wrap;
+    padding-bottom: 37px;
+  }
+
+  .logos {
+    height: auto;
+
+    &:nth-child(7), &:nth-child(8), &:nth-child(9), &:nth-child(10), &:nth-child(11) {
+      display: none;
+    }
+  }
+
+  .item-logos {
+    width: 224px;
+  }
+
+  .more {
+    display: flex;
+    width: 100%;
+    background: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: var(--darkText);
+    margin-top: 8px;
+  }
+
+  .slide-open {
+    display: flex !important;
+  }
+
+  .more-button {
+    margin: auto 10px auto 32px;
+  }
+
+  .btn-modif {
+    margin: 0 7px 0 0;
+  }
+
+  .technics {
+    height: 184px;
+
+    &:nth-child(4), &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8), &:nth-child(9), &:nth-child(10), &:nth-child(11) {
+      display: none;
+    }
+  }
+
+  .item-technics {
+    width: 224px;
+  }
+
+  /* ----- Swiper prices ----- */
+
+  .wrapper-prices {
+    width: 100%;
+    border-radius: 6px;
+    padding-bottom: 24px;
+  }
+
+  .prices_header {
+    margin-top: 31px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: var(--lightText);
+    mix-blend-mode: normal;
+    opacity: 0.72;
+  }
+
+  .services {
+    width: 52%;
+    margin: 0 0 16px 40px;
+  }
+
+  .price {
+    width: 13%;
+  }
+
+  .term {
+    width: 35%;
+  }
+
+  .prices {
+    width: 93.75%;
+    margin: 0;
+  }
+
+  .item-prices {
+    border: 0;
+  }
+
+  .prices-text {
+    width: 53%;
+  }
+
+  .prices-term {
+    width: 13%;
+  }
+
+  .prices-time {
+    width: 16%;
+  }
+
+  .prices-btn {
+    width: 18%;
+  }
+
+  .prices_header {
+    display: flex;
+  }
+
+  .prices {
+    height: auto;
+    width: 100%;
+  }
+
+  .item-prices {
+    display: flex;
+    height: auto;
+    width: auto;
+    padding: 23px 0 23px 16px;
+    border-bottom: 1px solid var(--greyDivider);
+    border-radius: 0;
+  }
+
+  .prices-head {
+    display: none;
+  }
+
+}
+
+@media (min-width: 1000px) {
+
+  .technics:nth-child(4) {
+    display: flex;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .item-logos {
+    width: 240px;
+  }
+
+  .item-technics:first-child {
+    margin-left: 32px;
+  }
+
+  .wrapper-prices {
+    padding-bottom: 32px;
+  }
+}
+
+@media (min-width: 1600px) {
+
+  .logos {
+    width: 20% !important;
+
+    &:nth-child(9), &:nth-child(10), &:nth-child(11) {
+      display: flex;
+    }
+  }
+
+  .more {
+    display: none;
+  }
+
+  .technics {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 1680px) {
+
+  .technics:nth-child(5) {
+    display: flex;
+  }
+}
+
+@media (min-width: 1920px) {
+  .technics, .logos {
+    width: 16% !important;
+  }
+}

@@ -5,7 +5,7 @@ import Swiper from './swiper'
 // slide logo
 const btnText = document.getElementById("swiper-showmore");
 const btnImgLogos = document.getElementById("btn-img-logos");
-const btnImg = document.querySelector(".swiper-more-button");
+const btnImg = document.querySelector(".more-button");
 const btnMoreLogos = document.querySelector("#btn-more-logos");
 const slide = document.getElementsByClassName("logos");
 // slide tech
@@ -38,26 +38,26 @@ const makeOrder = document.getElementsByClassName("prices-button");
 const descriptionLink = document.querySelector("descriptionLink");
 //orderCall
 const linkSearch = document.querySelector('.link__search');
-const orderCall = document.querySelector(".orderCall");
-const orderCallItem = document.querySelector(".orderCall__item");
-const orderCallClose = document.querySelector('.orderCall__item-close');
+const orderCall = document.querySelector(".order-call");
+const orderCallItem = document.querySelector(".order-call__item");
+const orderCallClose = document.querySelector('.order-call__item-close');
 const navbarCall = document.querySelector('.navbar__content-icons-call');
 const linkCall = document.querySelector('.link__call');
 // swiper
 if (document.body.clientWidth < 768) {
-  let mySwiper_test = new Swiper('.swiper-container-logo', {
+  let mySwiper_test = new Swiper('.container-logo', {
     slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination'
     }
   });
-  let test = new Swiper('.swiper-container-technics',{
+  let test = new Swiper('.container-technics',{
     slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination'
     }
   });
-  let prices = new Swiper('.swiper-container-prices',{
+  let prices = new Swiper('.container-prices',{
     slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination'
