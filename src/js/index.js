@@ -43,6 +43,7 @@ const orderCallItem = document.querySelector(".order-call__item");
 const orderCallClose = document.querySelector('.order-call__item-close');
 const navbarCall = document.querySelector('.navbar__content-icons-call');
 const linkCall = document.querySelector('.link__call');
+const main = document.querySelector('main');
 // swiper
 if (document.body.clientWidth < 768) {
   let mySwiper_test = new Swiper('.container-logo', {
@@ -117,7 +118,6 @@ readMore.addEventListener('click', () => {
     textMore.style.height = 'auto';
     readMoreImg.style.transform = "rotate(180deg)";
     readMoreText.textContent = "Скрыть";
-    // readImg.style.height = 'fit-content';
     dots.style.display = 'none';
   }
   else{
@@ -125,7 +125,6 @@ readMore.addEventListener('click', () => {
     textMore.style.height = '160px';
     readMoreText.textContent = "Читать далее";
     readMoreImg.style.transform = "rotate(0deg)";
-    // readImg.style.height = 'unset';
     dots.style.display = 'inline-block';
   }
 });
@@ -148,7 +147,9 @@ feedbackClose.addEventListener('click', () => {
 for(let i = 0; i < linkSettings.length; i++) {
   linkSettings[i].addEventListener('click', () => {
     feedback.style.display = 'block';
-    content.style.position = 'fixed';
+    if (document.body.clientWidth > 1439) {
+      main.style.position = 'fixed';
+    }
   });
 }
 //close modal window clicked on the outside
@@ -185,9 +186,11 @@ window.onclick = function (e) {
 //orderCall
 navbarCall.addEventListener('click', () =>{
   orderCall.style.display = 'block';
-  content.style.position = 'fixed';
   navbar.classList.remove('navbar--active');
   header.classList.remove('header__active');
+  if (document.body.clientWidth > 1439) {
+    main.style.position = 'fixed';
+  }
 });
 orderCallClose.addEventListener('click', () =>{
 
