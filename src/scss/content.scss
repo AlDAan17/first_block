@@ -36,7 +36,7 @@
   display: none;
 }
 
-.content__nav {
+.navigation {
   overflow-y: hidden;
   font-size: 16px;
   line-height: 24px;
@@ -51,13 +51,13 @@
   background: transparent;
 }
 
-.content__link {
+.navigation-link {
   display: inline-flex;
   color: var(--lightText);
   margin-right: 25px;
 }
 
-.content__link--active {
+.navigation-link--active {
   color: var(--lightText);
   padding: 8px 9px 8px 16px;
   border: 2px solid var(--sliderBorder);
@@ -266,7 +266,7 @@ main {
     margin-left: 24px;
   }
 
-  .content__nav {
+  .navigation {
     margin: 0 0 40px 24px;
   }
 
