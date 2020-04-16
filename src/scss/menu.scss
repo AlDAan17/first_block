@@ -124,7 +124,7 @@
     line-height: 24px;
     letter-spacing: -0.2px;
     color: var(--darkText);
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 32px;
   }
 
@@ -204,7 +204,7 @@
     padding-bottom: 80px;
   }
 
-  .navbar__content-language-ru, .navbar__content-language-en, .navbar__content-language-ch {
+  .navbar__content-language-item {
     color: var(--darkText);
     padding-right: 7px;
     transition: color .2s linear;

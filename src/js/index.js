@@ -191,7 +191,6 @@ navbarCall.addEventListener('click', () =>{
 });
 orderCallClose.addEventListener('click', () =>{
 
-
   orderCallItem.classList.add('AnimationModal__close');
 
   setTimeout(function(){

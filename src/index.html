@@ -92,9 +92,9 @@
                 </div>
             </div>
             <div class="navbar__content-language">
-                <a href="#" class="navbar__content-language-ru navbar__content-language-ru--active">RU</a>
-                <a href="#" class="navbar__content-language-en">EN</a>
-                <a href="#" class="navbar__content-language-ch">CH</a>
+                <a href="#" class="navbar__content-language-item navbar__content-language-ru--active">RU</a>
+                <a href="#" class="navbar__content-language-item">EN</a>
+                <a href="#" class="navbar__content-language-item">CH</a>
             </div>
         </div>
     </section>
@@ -403,7 +403,7 @@
                     <input class="feedback__item-input" type="text" placeholder="Имя" required>
                     <input class="feedback__item-input" type="tel" placeholder="Телефон" required>
                     <input class="feedback__item-input" type="email" placeholder="Электронная почта" required>
-                    <input class="feedback__item-input" type="text" placeholder="Сообщение" required>
+                    <textarea class="feedback__item-input feedback-message" type="text" placeholder="Сообщение" required></textarea>
                     <div class="feedback__item-description">Нажимая “отправить”, вы даете согласие на обработку персональных данных и соглашаетесь с нашей политикой конфиденциальности
                     <button id="feedback-btn" type="submit" class="prices-button feedback__item-btn">Отправить
                         <img src="./img/feedback/feedback.svg" alt="">
@@ -431,11 +431,13 @@
         </div>
 
         <footer>
-            <div class="policy">© 2019 CPS<br>
+          <div class="policy">
+            <div class="policy__item">© 2019 CPS<br>
                 Разработано командой Apesong
             </div>
-            <div class="policy">Политика конфиденциальности</div>
-            <div class="policy">Информация, размещенная на данной странице, не является публичной офертой</div>
+            <div class="policy__item">Политика конфиденциальности</div>
+            <div class="policy__item">Информация, размещенная на данной странице, не является публичной офертой</div>
+          </div>
         </footer>
 
     </section>
