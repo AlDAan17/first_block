@@ -143,6 +143,10 @@ feedbackClose.addEventListener('click', () => {
     content.style.position = 'unset';
     feedbackItem.classList.remove('AnimationModal__close');
   }, 200);
+
+  if (document.body.clientWidth > 1439) {
+    main.style.position = 'unset';
+  }
 });
 for(let i = 0; i < linkSettings.length; i++) {
   linkSettings[i].addEventListener('click', () => {
@@ -162,6 +166,9 @@ window.onclick = function (e) {
       content.style.position = 'unset';
       feedbackItem.classList.remove('AnimationModal__close');
     }, 200);
+    if (document.body.clientWidth > 1439) {
+      main.style.position = 'unset';
+    }
   }
   if(e.target === navbar){
     navbarContent.classList.add('AnimationNavClose');
@@ -181,6 +188,9 @@ window.onclick = function (e) {
       content.style.position = 'unset';
       orderCallItem.classList.remove('AnimationModal__close');
     }, 200);
+    if (document.body.clientWidth > 1439) {
+      main.style.position = 'unset';
+    }
   }
 };
 //orderCall
@@ -201,6 +211,10 @@ orderCallClose.addEventListener('click', () =>{
     content.style.position = 'unset';
     orderCallItem.classList.remove('AnimationModal__close');
   }, 200);
+
+  if (document.body.clientWidth > 1439) {
+    main.style.position = 'unset';
+  }
 });
 
 linkCall.addEventListener('click', () => {
